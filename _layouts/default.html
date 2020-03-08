@@ -1,3 +1,4 @@
+{% comment %} This page goes to every html page as base page {% endcomment %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -93,7 +94,7 @@
     </section>
 
     <section class="main-content fade">
-
+      {% comment %} content page goes here {% endcomment %}
       {{ content }}
 
       <footer class="site-footer">
