@@ -11,10 +11,9 @@ title: Algorithms
 {{tag_words}}
 <!-- 遍历所有有标签的文章并列出标题 -->
 {% for item in (1..site.tags.size) %}
-  {{item}}
   {% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    {{item, this_word, tag_words[item]}}
+    {{item}} {{this_word}} {{tag_words[item]}}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">
       #{{ this_word }}
     </h2>
