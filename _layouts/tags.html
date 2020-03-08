@@ -11,8 +11,8 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
 {% assign tag_words = site_tags | split:',' | sort %}
 
 <!-- 遍历所有有标签的文章并列出标题 -->
-{% for item in (0..site.tags.size) %}
-  {% unless forloop.last %}
+{% for item in (1..{{site.tags.siz | add:"1"}}) %}
+  {% comment %} {% unless forloop.last %} {% endcomment %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">
       #{{ this_word }}
@@ -32,7 +32,7 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
         </div>
       {% endif %}
     {% endfor %}
-  {% endunless %}
+  {% comment %} {% endunless %} {% endcomment %}
 {% endfor %}
 
   </div>
