@@ -14,6 +14,7 @@ title: Algorithms
   {{item}}
   {% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+    {{item, this_word, tag_words[item]}}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">
       #{{ this_word }}
     </h2>
