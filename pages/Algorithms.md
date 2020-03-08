@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Algorithms
+title: Algorithmss
 # tagline: Biu~
 ---
  <div>
