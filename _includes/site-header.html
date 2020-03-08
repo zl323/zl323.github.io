@@ -6,7 +6,8 @@
 
     {% comment %} Return home page link {% endcomment %}
     {% if page.layout != 'home' %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      {% comment %} <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> {% endcomment %}
+      <a class="site-title" href="{{ "/" | relative_url }}">Home</a>
     {% endif %}
 
     {% if page_paths %}
