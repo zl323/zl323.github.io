@@ -11,7 +11,7 @@ title: Algorithms
 {{tag_words[3]}}
 {{site.tags.size}}
 <!-- 遍历所有有标签的文章并列出标题 -->
-{% for item in (1..site.tags.size) %}
+{% for item in (1..site.tags.size+1) %}
   <!-- {% unless forloop.last %} -->
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     {{item}} {{this_word}} {{tag_words[item]}}
