@@ -8,10 +8,11 @@ title: Algorithms
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
+{% assign tag_size = site.tags.size | add:"1"}}
 {{tag_words[3]}}
 {{site.tags.size}}
 <!-- 遍历所有有标签的文章并列出标题 -->
-{% for item in (1..{{site.tags.size | add:"1"}} ) %}
+{% for item in (1..tag_size) %}
   <!-- {% unless forloop.last %} -->
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     {{item}} {{this_word}} {{tag_words[item]}}
