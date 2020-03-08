@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: tags
 title: Algorithms
 # tagline: Biu~
 ---
 
-<div>
+<!-- <div>
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
@@ -37,6 +37,6 @@ title: Algorithms
   <!-- {% endunless %} -->
 {% endfor %}
 
-  </div>
+  </div> -->
 
 [返回主页](https://zl323.github.io/)
