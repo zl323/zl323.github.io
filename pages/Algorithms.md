@@ -6,6 +6,8 @@ title: Algorithmss
 <div>
   {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
   {% assign tag_words = site_tags | split:',' | sort %}
+  <!-- get rid of duplicate tags in the array -->
+  {% tag_words | uniq %}
   
   <!-- 遍历所有有标签的文章并列出标题 -->
   {{tag_words}}
@@ -17,9 +19,9 @@ title: Algorithmss
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
     
-    {% for post in site.tags[this_word] %}
+    {% for post in site.tags %}
       {{post.tags}}
-      {% if post.title != null %}
+      {% if post.tags contains this_word %}
         <div class="tagged-post">
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
