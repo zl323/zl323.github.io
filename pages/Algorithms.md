@@ -5,9 +5,8 @@ title: Algorithmss
 ---
 <div>
   {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-  {% assign tag_words = site_tags | split:',' | sort %}
+  {% assign tag_words = site_tags | split:',' | uniq | sort %}
   <!-- get rid of duplicate tags in the array -->
-  {% tag_words | uniq %}
   
   <!-- 遍历所有有标签的文章并列出标题 -->
   {{tag_words}}
