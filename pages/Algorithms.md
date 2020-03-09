@@ -17,6 +17,7 @@ title: Algorithmss
     <!-- lists all posts corresponding to specific tag -->
     
     {% for post in site.tags[this_word] %}
+      {{post}}
       {% if post.title != null %}
         <div class="tagged-post">
           <h3 class="title">
