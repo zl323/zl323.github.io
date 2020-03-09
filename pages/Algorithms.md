@@ -18,7 +18,7 @@ title: Algorithmss
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
     
-    {% for post in site.tags %}
+    {% for post in site.tags[this_word] %}
       {{post.tags}}
       {% if post.title != null %}
         <div class="tagged-post">
