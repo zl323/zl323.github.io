@@ -21,7 +21,7 @@ title: Algorithmss
     
     {% for post in site.tags %}
       {{post.tags}}
-      {% if post.tags contains this_word %}
+      {% if this_word in post.tags %}
         <div class="tagged-post">
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
