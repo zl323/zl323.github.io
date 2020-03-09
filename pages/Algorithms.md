@@ -9,7 +9,6 @@ title: Algorithmss
   
   <!-- 遍历所有有标签的文章并列出标题 -->
 {% for item in tag_words %}
-    {{item}}
     {% if item == blank %} 
       {% continue %}
     {% endif %}
