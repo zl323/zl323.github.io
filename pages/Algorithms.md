@@ -8,6 +8,7 @@ title: Algorithmss
   {% assign tag_words = site_tags | split:',' | sort %}
   
   <!-- 遍历所有有标签的文章并列出标题 -->
+  {{tag_words}}
 {% for item in tag_words %}
     {% if item == blank %} 
       {% continue %}
