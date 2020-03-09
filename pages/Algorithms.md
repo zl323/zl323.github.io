@@ -10,6 +10,9 @@ title: Algorithmss
   <!-- 遍历所有有标签的文章并列出标题 -->
 {% for item in tag_words %}
     {{item}}
+    {% if not item %} 
+      {% continue %}
+    {% endif %}
     {% capture this_word %}{{ item | strip_newlines }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
