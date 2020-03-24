@@ -22,11 +22,10 @@ permalink: /tags.html
     <!-- lists all posts corresponding to specific tag -->
     <!-- {{page.tage.size}} -->
     <!-- {% for p in site.tags.this_word %} -->
-      <!-- {{post.tags}} -->
     <!-- lists all posts corresponding to specific tag -->
     {% for post in site.posts %}
-      {{post.tags}}
-      {% if post.title != null %}
+      <!-- {{post.tags}} -->
+      {% if post.tags contains this_word %}
         <div class="tagged-post">
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
