@@ -20,7 +20,7 @@ permalink: /tags.html
     {% capture this_word %}{{ item | strip_newlines }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
-    {{page.tags.size}}
+    {{site.tags.size}}
     <!-- {% for p in site.tags.this_word %} -->
     <!-- lists all posts corresponding to specific tag -->
     {% for post in site.posts %}
