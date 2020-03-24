@@ -22,7 +22,7 @@ permalink: /tags.html
     <!-- lists all posts corresponding to specific tag -->
     {{site.size}}
     {% for post in site.tags[this_word] %}
-      {{post}}
+      {{post.tag}}
       {% if post.title != null %}
         <div class="tagged-post">
           <h3 class="title">
