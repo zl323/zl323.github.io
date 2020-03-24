@@ -21,7 +21,7 @@ permalink: /tags.html
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
     {{site.posts.size}}
-    {% for p in site.tags.this_word %}
+    <!-- {% for p in site.tags.this_word %} -->
       <!-- {{post.tags}} -->
       <!-- {% if post.title != null %} -->
       <!-- {% for post_tag in post.tags %}
@@ -38,7 +38,7 @@ permalink: /tags.html
           </div>
         {% endif %}
       {% endfor %} -->
-    {% endfor %}
+    <!-- {% endfor %} -->
 {% endfor %}
 </div>
 [返回主页](https://zl323.github.io/)
