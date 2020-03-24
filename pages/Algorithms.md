@@ -24,7 +24,7 @@ permalink: /tags.html
     {% for post in site.posts %}
       {{post.title}}
       <!-- {% if post.title != null %} -->
-      {% for post_tag in post.tags %}
+      <!-- {% for post_tag in post.tags %}
         {% if post_tag == this_word %}
           <div class="tagged-post">
             <h3 class="title">
@@ -37,7 +37,7 @@ permalink: /tags.html
             </div>
           </div>
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     {% endfor %}
 {% endfor %}
 </div>
