@@ -19,7 +19,7 @@ permalink: /tags.html
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
     
-    {% for post in site.tags[this_word] %}
+    {% for post in site.tags %}
       {{post.tags}}
       {% if post.title != null %}
         <div class="tagged-post">
