@@ -25,6 +25,7 @@ permalink: /tags.html
     <!-- lists all posts corresponding to specific tag -->
     {% for post in site.posts %}
       <!-- {{post.tags}} -->
+      {{'Hello'}}
       {% if post.tags contains this_word %}
         <div class="tagged-post">
           <h3 class="title">
