@@ -23,10 +23,9 @@ permalink: /tags.html
     {{site.posts.size}}
     <!-- {% for p in site.tags.this_word %} -->
     <!-- lists all posts corresponding to specific tag -->
-    <ul>
     {% for post in site.posts %}
       <!-- {{post.tags}} -->
-      {% if post.tags contains this_word %}
+      <!-- {% if post.tags contains this_word %} -->
         <div class="tagged-post">
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
@@ -37,9 +36,8 @@ permalink: /tags.html
             {{ post.date | date: "%B %-d, %Y" }}
           </div>
         </div>
-      {% endif %}
+      <!-- {% endif %} -->
     {% endfor %}
-    </ul>
     <!-- {% endfor %} -->
  {% endfor %}
 </div>
