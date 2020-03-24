@@ -14,7 +14,7 @@ Here we generate all the tags.
 {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 
-{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign rawtags = rawtags | split:'|' | sort | unique %}
 
 {% assign tags = "" %}
 
