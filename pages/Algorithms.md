@@ -40,7 +40,7 @@ Here we generate all the tags.
 <div class="posts">
 <p>
 {% for tag in tags %}
-<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a>
+<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;
 {% endfor %}
 
 {% for tag in tags %}
