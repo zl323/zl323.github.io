@@ -13,7 +13,7 @@ permalink: /tags.html
   
   <!-- 遍历所有有标签的文章并列出标题 -->
   {{tag_words}}
-{% for item in tag_words %}
+ {% for item in tag_words %}
     {% if item == blank %} 
       {% continue %}
     {% endif %}
@@ -23,7 +23,7 @@ permalink: /tags.html
     {{site.posts.size}}
     <!-- {% for p in site.tags.this_word %} -->
     <!-- lists all posts corresponding to specific tag -->
-    {% for post in site.posts %}
+    {% for post in site.posts.item %}
       <!-- {{post.tags}} -->
       <h2>{{post.title}}</h2>
       {% if post.tags contains this_word %}
@@ -40,6 +40,6 @@ permalink: /tags.html
       {% endif %}
     {% endfor %}
     <!-- {% endfor %} -->
-{% endfor %}
+ {% endfor %}
 </div>
 [返回主页](https://zl323.github.io/)
