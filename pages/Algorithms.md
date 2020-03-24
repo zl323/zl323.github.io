@@ -23,21 +23,21 @@ permalink: /tags.html
     <!-- {{site.posts.size}} -->
     <!-- {% for p in site.tags.this_word %} -->
       <!-- {{post.tags}} -->
-      <!-- {% if post.title != null %} -->
-      <!-- {% for post_tag in post.tags %}
-        {% if post_tag == this_word %}
-          <div class="tagged-post">
-            <h3 class="title">
-              <a href="{{ post.url | relative_url }}">
-                {{ post.title }}
-              </a>
-            </h3>
-            <div class="meta">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </div>
+      <!-- lists all posts corresponding to specific tag -->
+    {% for post in site.tags[this_word] %}
+      {% if post.title != null %}
+        <div class="tagged-post">
+          <h3 class="title">
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+          <div class="meta">
+            {{ post.date | date: "%B %-d, %Y" }}
           </div>
-        {% endif %}
-      {% endfor %} -->
+        </div>
+      {% endif %}
+    {% endfor %}
     <!-- {% endfor %} -->
 {% endfor %}
 </div>
