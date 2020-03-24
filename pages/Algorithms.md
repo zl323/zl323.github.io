@@ -32,10 +32,10 @@ Here we generate all the tags.
 {% endif %}
 {% endfor %}
 
-<h1 class="page-title">
+<!-- <h1 class="page-title">
   <a href="/blog">Blog</a> | {{ page.title }}
 </h1>
-<br/>
+<br/> -->
 
 <div class="posts">
 <p>
