@@ -39,9 +39,12 @@ Here we generate all the tags.
 
 <div class="posts">
 <p>
-{% for tag in tags %}
-<a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;
-{% endfor %}
+<div class="tag-expo">
+ <div class="tag-expo-list">
+ {% for tag in tags %}
+  <a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;
+ {% endfor %}
+ </div>
 
 {% for tag in tags %}
 <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
@@ -64,5 +67,6 @@ Here we generate all the tags.
 </ul>
 {% endfor %}
 </p>
+</div>
 </div>
 [返回主页](https://zl323.github.io/)
