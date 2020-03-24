@@ -38,7 +38,6 @@ Here we generate all the tags.
 <br/> -->
 
 <div class="posts">
-<p>
 <div class="tag-expo">
  <div class="tag-expo-list">
  {% for tag in tags %}
@@ -66,7 +65,5 @@ Here we generate all the tags.
   {% endfor %}
 </ul>
 {% endfor %}
-</p>
-</div>
 </div>
 [返回主页](https://zl323.github.io/)
