@@ -3,6 +3,7 @@ layout: page
 title: Tags
 permalink: /tags.html
 # tagline: Biu~
+# do not add , in the tag of posts
 ---
 {% comment%}
 Here we generate all the tags.
