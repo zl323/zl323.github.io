@@ -23,6 +23,7 @@ permalink: /tags.html
     {{site.posts.size}}
     <!-- {% for p in site.tags.this_word %} -->
     <!-- lists all posts corresponding to specific tag -->
+    <ul>
     {% for post in site.posts %}
       <!-- {{post.tags}} -->
       {% if post.tags contains this_word %}
@@ -38,6 +39,7 @@ permalink: /tags.html
         </div>
       {% endif %}
     {% endfor %}
+    </ul>
     <!-- {% endfor %} -->
  {% endfor %}
 </div>
