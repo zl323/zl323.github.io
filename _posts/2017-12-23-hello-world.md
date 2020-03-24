@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-tags: Hydrogen
+tags: Hydrogen people life
 stickie: true
 ---
 
