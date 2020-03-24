@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+permalink: /tags.html
 # tagline: Biu~
 ---
 <div>
