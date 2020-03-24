@@ -21,9 +21,10 @@ permalink: /tags.html
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
     {{site.posts.size}}
-    {% for post in site.posts[this_word] %}
+    {% for post in site.posts %}
       {{post.tags}}
-      {% if post.title != null %}
+      <!-- {% if post.title != null %} -->
+      {% if post.tags contains this_word %}
         <div class="tagged-post">
           <h3 class="title">
             <a href="{{ post.url | relative_url }}">
