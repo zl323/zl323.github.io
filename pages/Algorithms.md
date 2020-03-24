@@ -5,6 +5,7 @@ permalink: /tags.html
 # tagline: Biu~
 ---
 <div>
+  <!-- first 表示按时间顺序 tag -->
   {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
   {{site_tags}}
   {% assign tag_words = site_tags | split:',' | uniq | sort %}
@@ -19,7 +20,7 @@ permalink: /tags.html
     {% capture this_word %}{{ item | strip_newlines }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}" class="tag-title">#{{ this_word }}</h2>
     <!-- lists all posts corresponding to specific tag -->
-    
+    {{site.tags[this_word].size}}
     {% for post in site.tags[this_word] %}
       {{post.tags}}
       {% if post.title != null %}
