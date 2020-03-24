@@ -24,18 +24,20 @@ permalink: /tags.html
     {% for post in site.posts %}
       {{post.tags}}
       <!-- {% if post.title != null %} -->
-      {% if post.tags contains this_word %}
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <div class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
+      {% for post_tag in post.tags %}
+        {% if post_tag == this_word %}
+          <div class="tagged-post">
+            <h3 class="title">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <div class="meta">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </div>
           </div>
-        </div>
-      {% endif %}
+        {% end if %}
+      {% endfor %}
     {% endfor %}
 {% endfor %}
 </div>
