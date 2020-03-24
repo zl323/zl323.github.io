@@ -23,9 +23,8 @@ permalink: /tags.html
     {{site.posts.size}}
     <!-- {% for p in site.tags.this_word %} -->
     <!-- lists all posts corresponding to specific tag -->
-    {% for post in site.posts.item %}
+    {% for post in site.posts %}
       <!-- {{post.tags}} -->
-      <h2>{{post.title}}</h2>
       {% if post.tags contains this_word %}
         <div class="tagged-post">
           <h3 class="title">
