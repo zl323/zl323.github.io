@@ -36,7 +36,7 @@ permalink: /tags.html
               {{ post.date | date: "%B %-d, %Y" }}
             </div>
           </div>
-        {% end if %}
+        {% endif %}
       {% endfor %}
     {% endfor %}
 {% endfor %}
