@@ -6,6 +6,7 @@ permalink: /tags.html
 ---
 <div>
   {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+  {{site_tags}}
   {% assign tag_words = site_tags | split:',' | uniq | sort %}
   <!-- get rid of duplicate tags in the array -->
   
