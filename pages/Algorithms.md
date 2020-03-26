@@ -41,7 +41,7 @@ Here we generate all the tags.
 <div class="tag-expo">
  <div class="tag-expo-list">
  {% for tag in tags %}
-  <a href="#{{ tag | slugify }}" class="post-tag"> {{ tag }} </a> &nbsp;
+  <a href="#{{ tag | slugify }}" class="codinfox-tag-mark"> {{ tag }} </a> &nbsp;
  {% endfor %}
  </div>
 
