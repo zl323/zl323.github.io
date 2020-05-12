@@ -13,3 +13,4 @@ for i = 0 to n-2
     if(arr[j] < arr[i]) minIdx = j;
   swap(arr, minIdx, i);
 {% endhighlight %}
+Above is the pseudocode.
