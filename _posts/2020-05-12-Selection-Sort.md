@@ -6,7 +6,7 @@ tags: Sorting
 ---
 
 PseudoCode Algorithm for Selection Sort
-{% highlight ruby linenos %}
+{% highlight java linenos %}
 for i = 0 to n-2
   minIdx = i;
   for j = i+1 to n-1
