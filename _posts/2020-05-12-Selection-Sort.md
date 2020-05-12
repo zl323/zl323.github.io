@@ -6,6 +6,22 @@ tags: Sorting
 ---
 
 PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
+
+PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
+
+PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
+
+PseudoCode Algorithm for Selection SortPseudoCode Algorithm for Selection Sort
+
+PseudoCode Algorithm for Selection Sort
+
+PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
+PseudoCode Algorithm for Selection Sort
 {% highlight ruby %}
 for i = 0 to n-2
   minIdx = i;
