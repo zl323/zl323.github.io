@@ -6,22 +6,7 @@ tags: Sorting
 ---
 
 PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
 
-PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
-
-PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
-
-PseudoCode Algorithm for Selection SortPseudoCode Algorithm for Selection Sort
-
-PseudoCode Algorithm for Selection Sort
-
-PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
-PseudoCode Algorithm for Selection Sort
 {% highlight java %}
 for i = 0 to n-2
   minIdx = i;
