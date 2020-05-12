@@ -44,8 +44,3 @@ facebook:
   app_id: null
   #authors: null
 #  admins:
-markdown: kramdown
-kramdown:
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
