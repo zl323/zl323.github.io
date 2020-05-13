@@ -20,3 +20,9 @@ Above is the pseudocode.
 Selection Sort has a time complexity of $O(n^2)$. Since Selection Sort is an ***in-place*** operation, the space complexity is $O(1)$.
 
 PseudoCode Algorithm for Insertion Sort
+{% highlight java linenos }
+for i = 1 to n-1
+  key = A[i]
+  
+  A[i+1] = key
+{% endhighlight %}
