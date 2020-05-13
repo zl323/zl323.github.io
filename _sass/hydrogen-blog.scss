@@ -233,7 +233,7 @@ a {
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    border: solid 0px $border-color;
     border-radius: 0.3rem;
 
     > code {
