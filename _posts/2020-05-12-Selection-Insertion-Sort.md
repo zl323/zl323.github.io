@@ -33,4 +33,5 @@ for i = 1 to n-1
 Insertion Sort has two cases to consider:
 - Best Case: If the array is sorted in ascending order, then the time complexity is $O(n)$.
 - Worst Case: If the array is sorted in descending order, then the time complexity is $O(n^2)$.
+
 Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$.
