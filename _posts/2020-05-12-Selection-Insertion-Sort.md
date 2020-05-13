@@ -9,7 +9,6 @@ mathjax: true
 PseudoCode Algorithm for Selection Sort
 
 {% highlight java linenos %}
-SELECTION_SORT(A)
 for i = 0 to n-2
   minIdx = i;
   for j = i+1 to n-1
@@ -22,7 +21,6 @@ Selection Sort has a time complexity of $O(n^2)$. Since Selection Sort is an ***
 
 PseudoCode Algorithm for Insertion Sort
 {% highlight java linenos }
-INSERTION_SORT(A)
 for i = 1 to n-1
   key = A[i]
   i = j-1
