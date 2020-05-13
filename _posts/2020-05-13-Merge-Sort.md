@@ -13,10 +13,13 @@ At each level of the tree, the size of input is split into half. The size of inp
 At each level of the tree, MERGE operation will be performed. The MERGE operation will have cost of $O(n)$ since we need to compare each element from the left and right half, and put them into a single array. Here is the pseudocode for MERGE_SORT recursive method.
 
 {% highlight java linenos %}
+// recursive method
+// A: input; ACopy: copy of input; left: left index; right: right index
 MERGE_SORT(A, ACopy, left, right):
+  // base case: left >= right, return
   if(left < right)
-    mid = left + (right - left)/2
-    MERGE_SORT(A, ACopy, left, mid)
-    MERGE_SORT(A, ACopy, mid+1, right)
-    MERGE(A, ACopy, left, mid, right)
+    mid = left + (right - left)/2       // get mid index
+    MERGE_SORT(A, ACopy, left, mid)     // MERGE_SORT left part
+    MERGE_SORT(A, ACopy, mid+1, right)  // MERGE_SORT right part
+    MERGE(A, ACopy, left, mid, right)   // MERGE two parts
 {% endhighlight %}
