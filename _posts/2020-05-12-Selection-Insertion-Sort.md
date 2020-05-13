@@ -30,4 +30,7 @@ for i = 1 to n-1
   A[i+1] = key    // swap
 {% endhighlight %}
 
-Insertion Sort has a time complexity of $O(n^2)$ in the worst case. Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$.
+Insertion Sort has two cases to consider:
+- Best Case: If the array is sorted in ascending order, then the time complexity is $O(n)$.
+- Worst Case: If the array is sorted in descending order, then the time complexity is $O(n^2)$.
+Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$.
