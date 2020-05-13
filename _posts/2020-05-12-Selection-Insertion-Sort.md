@@ -21,8 +21,4 @@ Selection Sort has a time complexity of $O(n^2)$. Since Selection Sort is an ***
 
 PseudoCode Algorithm for Insertion Sort
 {% highlight java linenos }
-for i = 1 to n-1
-  key = A[i]
-  
-  A[i+1] = key
 {% endhighlight %}
