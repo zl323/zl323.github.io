@@ -16,4 +16,4 @@ for i = 0 to n-2
 {% endhighlight %}
 Above is the pseudocode.
 
-Selection Sort has a time complexity of O($n^{2}$)
+Selection Sort has a time complexity of $$O(n^2)$$
