@@ -27,5 +27,7 @@ for i = 1 to n-1
   while i>0 and A[i]>key
     A[i+1] = A[i] // shift right
     i--
-  A[i+1] = key
+  A[i+1] = key    // swap
 {% endhighlight %}
+
+Insertion Sort has a time complexity of $O(n^2)$ in the worst case. Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$.
