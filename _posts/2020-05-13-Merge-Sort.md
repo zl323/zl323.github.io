@@ -29,6 +29,7 @@ MERGE_SORT(A, ACopy, left, right):
 {% endhighlight %}
 
 <p>We can also analyze the runtime with the method of Master Theorem.</p>
+
 \\[
 T(n) =
   \begin{cases}
