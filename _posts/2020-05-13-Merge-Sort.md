@@ -81,3 +81,10 @@ MERGE_SORT(A, ACopy, left, right):
 {% endhighlight %}
 
 </details>
+
+
+***Think: Why do we prefer splitting into half for MERGE_SORT?***
+<details>
+<summary>answer</summary>
+
+</details>
