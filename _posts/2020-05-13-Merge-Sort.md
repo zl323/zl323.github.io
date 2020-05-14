@@ -28,7 +28,26 @@ MERGE_SORT(A, ACopy, left, right):
     MERGE(A, ACopy, left, mid, right)   // MERGE two parts
 {% endhighlight %}
 
-<p>We can also analyze the runtime with the method of Master Theorem.</p>
+Here is the pseudocode for MERGE method.
+{% highlight java linenos %}
+// ACopy consists of 2 half SORTED arrays.
+// We want to overwrite the original array A
+MERGE(A, ACopy, left, mid, right):
+  // initialize left and right pointers
+  LPtr = left           
+  RPtr = mid + 1
+  // compare, overwrite, and move pointers
+  while LPtr < mid && RPtr < right
+    if(ACopy[LPtr] < ACopy[RPtr]) 
+      A[left++] = ACopy[LPtr++]
+    else 
+      A[left++] = ACopy[RPtr++]
+  // post processing on LPtr
+  while(LPtr < mid) A[left++] = ACopy[LPtr++]
+  // Question, why we don't need to worry RPtr?
+{% endhighlight %}
+
+We can also analyze the runtime with the method of Master Theorem.
 
 \\[
 T(n) =
