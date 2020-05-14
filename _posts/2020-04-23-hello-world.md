@@ -9,6 +9,6 @@ My name is Michael Li. I'm currently a Master Student at University of Pennsylva
 
 This website is for personal interests. I will mainly post some blogs about Data Structures and Algorithms. Depending on my interests, I will probably post some technical blogs regarding backend technology stacks.
 
-No matter you are a CS master or rooster, hope you could enjoy reading my blogs!
+No matter you are a CS master or rookie, hope you could enjoy reading my blogs!
 
 > Hello Hydrogen!
