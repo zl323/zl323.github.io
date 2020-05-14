@@ -18,3 +18,5 @@ QUICK_SORT(A, left, right):
     QUICK_SORT(A, left, pivot-1)        // QUICK_SORT left part
     QUICK_SORT(A, pivot+1, right)       // QUICK_SORT right part
 {% endhighlight %}
+
+The key of this algorithm is the ***PARTITION*** method.
