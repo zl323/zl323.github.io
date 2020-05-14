@@ -25,11 +25,11 @@ PseudoCode Algorithm for Insertion Sort
 INSERTION_SORT(A):
 for i = 1 to n-1
   key = A[i]
-  i = j-1
-  while i>0 and A[i]>key
-    A[i+1] = A[i] // shift right
-    i--
-  A[i+1] = key    // swap
+  j = i-1
+  while j>=0 and A[j]>key
+    A[j+1] = A[j] // shift right
+    j--
+  A[j+1] = key    // swap
 {% endhighlight %}
 
 Insertion Sort has two cases to consider:
