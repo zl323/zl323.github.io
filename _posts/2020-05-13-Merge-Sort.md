@@ -6,7 +6,7 @@ tags: Sorting
 mathjax: true
 ---
 The image below shows how the merge sort operates at each level. 
-<div>
+<div class="highlight">
     <img src="https://zl323.github.io/assets/postImg/mergeSort1.png" alt="useful image" height="70%" width="70%">
     <figcaption>Credit. Introduction to Algorithm by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</figcaption>
 </div>
