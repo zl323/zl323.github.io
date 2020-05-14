@@ -39,6 +39,6 @@ With this method, we can also get the runtime of this sorting algorithm $O(nlogn
 Noted that the space complexity of merge sort is $O(n)$ due to using a copy of input array $ACopy$, seen in pseudocode.
 
 Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
-- Divide: Compute midPoint index to split the array into half. This costs constant time, $O(1)$.
-- Conquer: Recursively find subproblem with size of n/2 from left and right halves. This costs time. $2T(n/2)$
-- Merge: Merge two sorted parts into one array in ascending order. This costs linear time, $O(n)$
+- ***Divide***: Compute midPoint index to split the array into half. This costs constant time, $O(1)$.
+- ***Conquer***: Recursively find subproblem with size of n/2 from left and right halves. This costs time. $2T(n/2)$
+- ***Merge***: Merge two sorted parts into one array in ascending order. This costs linear time, $O(n)$
