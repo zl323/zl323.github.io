@@ -28,7 +28,7 @@ MERGE_SORT(A, ACopy, left, right):
     MERGE(A, ACopy, left, mid, right)   // MERGE two parts
 {% endhighlight %}
 
-We can also analyze the runtime with the method of Master Theorem.
+<p>We can also analyze the runtime with the method of Master Theorem.</p>
 \\[
 T(n) =
   \begin{cases}
