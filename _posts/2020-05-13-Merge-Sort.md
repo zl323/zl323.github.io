@@ -34,3 +34,6 @@ T(n) =
     2T(n/2)+O(n) &\text{if } n>1
   \end{cases}
 \\]
+With this method, we can also get the runtime of this sorting algorithm $O(nlogn)$.
+
+Noted that the space complexity of merge sort is $O(n)$ due to using a copy of input array.
