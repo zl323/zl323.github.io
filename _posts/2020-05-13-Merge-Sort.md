@@ -7,7 +7,7 @@ mathjax: true
 ---
 The image below shows how the merge sort operates at each level. 
 <img src="https://zl323.github.io/assets/postImg/mergeSort1.png" alt="useful image" height="70%" width="70%">
-
+<figcaption>Credit. Introduction to Algorithm by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</figcaption>
 At each level of the tree, the size of input is split into half. The size of input will continue splitting until the size of input becomes 1. This splitting process will occur $O(logn)$ times.
 
 At each level of the tree, MERGE operation will be performed. The MERGE operation will have cost of $O(n)$ since we need to compare each element from the left and right half, and put them into a single array. Thus, the overall time complexity of merge sort is $O(nlogn)$.
