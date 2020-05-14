@@ -44,7 +44,7 @@ Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
 - ***Merge***: Merge two sorted parts into one array in ascending order. This costs linear time, $O(n)$
 
 <details>
-<summary>Click to expand</summary>
+<summary>Detailed Implementation of Merge Sort in Java</summary>
 
 {% highlight java linenos %}
 // recursive method
