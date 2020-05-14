@@ -46,6 +46,16 @@ Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
 <details>
 <summary>Click to expand</summary>
 
-whatever
+{% highlight java linenos %}
+// recursive method
+// A: input; ACopy: copy of input; left: left index; right: right index
+MERGE_SORT(A, ACopy, left, right):
+  // base case: left >= right, return
+  if(left < right)
+    mid = left + (right - left)/2       // get mid index
+    MERGE_SORT(A, ACopy, left, mid)     // MERGE_SORT left part
+    MERGE_SORT(A, ACopy, mid+1, right)  // MERGE_SORT right part
+    MERGE(A, ACopy, left, mid, right)   // MERGE two parts
+{% endhighlight %}
 
 </details>
