@@ -52,4 +52,11 @@ T(n) = T(n-1) + T(0) + O(n) = T(n-1) + O(n)
 \\]
 And we know that this will result in runtime of $O(n^2)$. This is also because of the chosen pivot is extremely unbalanced.
 
-How about splitting the sizes of two subarrays into ratio 9:1? Does it change the overall runtime of Quick Sort?
+How about splitting the sizes of two subarrays into ratio 9:1? Does it change the overall runtime of Quick Sort? Let's take a look at the figure below.
+
+<figure>
+    <img src="https://zl323.github.io/assets/postImg/quickSort1.png" alt="useful image" height="70%" width="70%">
+    <figcaption>Credit. Introduction to Algorithm by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</figcaption>
+</figure>
+
+As we can see from the figure, 
