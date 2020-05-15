@@ -59,4 +59,4 @@ How about splitting the sizes of two subarrays into ratio 9:1? Does it change th
     <figcaption>Credit. Introduction to Algorithm by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein</figcaption>
 </figure>
 
-As we can see above, each level still takes $O(n)$ due to method of PARTITION. However, the height of tree depends on the deepest branch, which is $O(log_{10/9}n)$. Therefore, overall the runtime will still be $O(nlog_{10/9}n)$ = $O(nlogn)$ since we can apply Change of Base Formula.
+As we can see above, each level still takes $O(n)$ due to method of PARTITION. However, the height of tree depends on the deepest branch, which is $O(log_{\frac{10}{9}}n)$. Therefore, overall the runtime will still be $O(nlog_{\frac{10}{9}}n)$ = $O(nlogn)$ since we can apply Change of Base Formula. In fact, whatever the ratio of size of two subarrays is, as long as the ratio is constant, the runtime will always become $O(nlogn)$.
