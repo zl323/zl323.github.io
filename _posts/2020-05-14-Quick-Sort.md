@@ -50,4 +50,6 @@ Assuming that we pick the last element as pivot:
 \\[
 T(n) = T(n-1) + T(0) + O(n) = T(n-1) + O(n)
 \\]
-And we know that this will result in runtime of $O(n^2)$.
+And we know that this will result in runtime of $O(n^2)$. This is also because of the chosen pivot is extremely unbalanced.
+
+How about splitting the sizes of two subarrays into ratio 9:1? Does it change the overall runtime of Quick Sort?
