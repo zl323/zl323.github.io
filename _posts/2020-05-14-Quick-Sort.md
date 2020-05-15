@@ -46,7 +46,7 @@ Now let's discuss a bit why the ***PARTITION*** method plays an important role i
 
 Assuming that each time we pick the last element as pivot:
 - Best case: If everytime the chosen pivot happens to be the median of elements in the array, then the array can be perfectly split in half. We call this case the split is balanced. The overall runtime will be the same as Merge Sort, which is $O(nlogn)$.
-- Worse cases: Array is already sorted. In other words, the two subarrays will have size of 0 and n-1, respectively. The recursive expression becomes the following: 
+- Worse cases: If everytime the chosen pivot happens to be the minimum or maximum. In other words, the two subarrays will have size of 0 and n-1, respectively. The recursive expression becomes the following: 
 \\[
 T(n) = T(n-1) + T(0) + O(n) = T(n-1) + O(n)
 \\]
