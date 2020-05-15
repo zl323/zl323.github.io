@@ -45,5 +45,6 @@ Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
 Now let's discuss a bit why the ***PARTITION*** method plays an important role in Quick Sort. The performance of Quick Sort depends on how we choose the pivot. What is the reason?
 
 - Best case: If every time the chosen pivot happens to be the median of elements in the array, then the array can be perfectly split in half. We call this case the split is balanced. The overall runtime will be the same as Merge Sort, which is $O(nlogn)$.
-- Worse cases: 1. Array is already sorted.
-               2. Every time
+- Worse cases: 
+  1. Array is already sorted.
+  2. Every time
