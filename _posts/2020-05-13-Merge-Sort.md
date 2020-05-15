@@ -83,8 +83,8 @@ MERGE_SORT(A, ACopy, left, right):
 </details>
 
 
-***Think: Why do we prefer splitting into half for MERGE_SORT?***
+***Think: Why do we prefer splitting into half for MERGE_SORT? Instead of splitting into 3 or 4 subarrays?***
 <details>
 <summary>answer</summary>
-
+Please see the quick sort post
 </details>
