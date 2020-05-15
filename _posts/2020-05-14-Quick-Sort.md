@@ -38,8 +38,12 @@ PARTITION(A, left, right):
 {% endhighlight %}
 
 Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
-- ***Divide***: Define a pivot *q*, the array is split into left array A[*left*, *q-1*] and right array A[*q+1*, *right*]
-- ***Conquer***: Recursively sort subproblem with left and right arrays.
-- ***Combine***: Since Quick Sort is an in-place algorithm, Combine operation is not necessary. Array itself is already ordered.
+- ***Divide*** : Define a pivot *q*, the array is split into left array A[*left*, *q-1*] and right array A[*q+1*, *right*]
+- ***Conquer*** : Recursively sort subproblem with left and right arrays.
+- ***Combine*** : Since Quick Sort is an in-place algorithm, Combine operation is not necessary. Array itself is already ordered.
 
-Now let's discuss a bit why the ***PARTITION*** method plays an important role in Quick Sort.
+Now let's discuss a bit why the ***PARTITION*** method plays an important role in Quick Sort. The performance of Quick Sort depends on how we choose the pivot. What is the reason?
+
+- Best case: If every time the chosen pivot happens to be the median of elements in the array, then the array can be perfectly split in half. We call this case the split is balanced. The overall runtime will be the same as Merge Sort, which is $O(nlogn)$.
+- Worse cases: 1. Array is already sorted.
+               2. Every time
