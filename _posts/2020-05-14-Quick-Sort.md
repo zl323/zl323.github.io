@@ -6,7 +6,7 @@ tags: Sorting
 mathjax: true
 ---
 
-Similar to Merge Sort, Quick Sort applies method of Divide and Conquer as well. Let's take a look at the pseudo code for Quick Sort.
+Similar to Merge Sort, Quick Sort applies method of Divide and Conquer as well. Let's first take a look at the pseudo code for Quick Sort.
 
 {% highlight java linenos %}
 // recursive method
@@ -20,3 +20,26 @@ QUICK_SORT(A, left, right):
 {% endhighlight %}
 
 The key of this algorithm is the ***PARTITION*** method.
+
+{% highlight java linenos %}
+PARTITION(A, left, right):
+  // choose right index as the pivot index by default
+  pivot = A[right]
+  l = left
+  r = right - 1
+  // left and right pointers move towards center
+  while l <= r
+    if(A[l] < pivot) l++
+    else if(A[r] >= pivot) r--
+    else swap(A, l++, r--)
+  // swap pivot value with the left pointer
+  swap(A, right, l);
+  return l
+{% endhighlight %}
+
+Merge Sort applies ***Divide and Conquer*** technique into the algorithm:
+- ***Divide***: Define a pivot *q*, the array is split into left array A[*left*, *q-1*] and right array A[*q+1*, *right*]
+- ***Conquer***: Recursively sort subproblem with left and right arrays.
+- ***Combine***: Since Quick Sort is an in-place algorithm, Combine operation is not necessary. Array itself is already ordered.
+
+Now let's discuss a bit why the ***PARTITION*** method plays an important role in Quick Sort.
