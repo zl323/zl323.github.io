@@ -66,3 +66,5 @@ As we can see above, each level still takes $O(n)$ due to method of ***PARTITION
 <summary>answer</summary>
 
 </details>
+
+Quick Sort is ***UNSTABLE***.
