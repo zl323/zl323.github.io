@@ -31,3 +31,5 @@ return res
 At line 16, we decrease the number of element by 1 in the C array due to the fact that duplicate element is allowed in the counting sort algorithm. We set position for next element in the res array.
 
 From the code above, we can observe that other than linear time cost of $O(n)$, there is another factor of linear time cost of $O(k)$. So how does this value $k$ affect the overall runtime of this algorithm? It actually depends on how close it is to the size $n$. If $k$ is equal to $n$, then overall runtime becomes $O(2n)$, which is still $O(n)$. However, if $k$ > $n$, then the overall runtime becomes $O(n+k)$. Due to this reason, **we prefer Counting Sort whenever the maximum element in the array is close to the size of array, k = O(n).**
+
+Another important characteristic of Counting Sort is its stability. Counting Sort is ***STABLE***. The stability will preserve the order of duplicated elements before and after sorting. In other words, stable sorting maintains the position of two equals elements relative to one another.
