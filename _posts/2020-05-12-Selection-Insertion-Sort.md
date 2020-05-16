@@ -18,7 +18,7 @@ for i = 0 to n-2
 {% endhighlight %}
 Above is the pseudocode.
 
-Selection Sort has a time complexity of $O(n^2)$. Since Selection Sort is an ***in-place*** operation, the space complexity is $O(1)$.
+Selection Sort has a time complexity of $O(n^2)$. Since Selection Sort is an ***in-place*** operation, the space complexity is $O(1)$. Selection Sort is ***UNSTABLE***.
 
 PseudoCode Algorithm for Insertion Sort
 {% highlight java linenos %}
@@ -36,4 +36,4 @@ Insertion Sort has two cases to consider:
 - Best Case: If the array is sorted in ASCENDING order, then the time complexity is $O(n)$.
 - Worst Case: If the array is sorted in DESCENDING order, then the time complexity is $O(n^2)$.
 
-Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$.
+Since Insertion Sort is an ***in-place*** operation, the space complexity is $O(1)$. Insertion Sort is ***STABLE***.
