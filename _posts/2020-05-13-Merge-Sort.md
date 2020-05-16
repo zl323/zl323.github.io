@@ -88,3 +88,5 @@ MERGE_SORT(A, ACopy, left, right):
 <summary>answer</summary>
 Please see the quick sort post
 </details>
+
+Merge Sort is ***STABLE***.
