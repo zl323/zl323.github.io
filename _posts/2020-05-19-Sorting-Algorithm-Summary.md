@@ -8,6 +8,12 @@ mathjax: true
 
 Here is a Table of Characteristics of Sorting Algorithm in comparison.
 
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
 | Sorting Algorithms | Worst  | Average | Stability | Space |
 | ------------------ |:------:|:-------:|:---------:| -----:|
 | Selection Sort     |$O(n^2)$| $O(n^2)$|  unstable |$O(1)$ |
+| Insertion Sort     |$O(n^2)$| $O(n^2)$|  stable   |$O(1)$ |
