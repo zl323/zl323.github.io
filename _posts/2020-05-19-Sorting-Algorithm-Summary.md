@@ -28,4 +28,5 @@ Some Notes to Take:
 - If the size of input $n$ is relatively large, we will consider the following cases:
   * If the inputs are distributed randomly, in other words, the pivots are distributed randomly, then we use ***Quick Sort***.
   * If QuickSort is not able to take the job, then we use ***Heap Sort*** as it has the same time complexity as QuickSort.
+  * If it is an ***ONLINE*** process, in other words, there is data streaming while being sorted, then we use ***Heap Sort***. This is the only ONLINE algorithm, which means it can update constantly.
   * If the ***STABILITY*** needs to be maintained, we can use ***Insertion Sort combined with Merge Sort***. Since they are both stable algorithm, while heap sort and quick sort are unstable.
