@@ -14,7 +14,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-| Sorting Algorithms | Worst  | Average | Stability | Space |
+| Sorting Algorithms | Worst  |     Average     | Stability | Space |
 | ------------------ |:------:|:-------:|:---------:|------:|
 | Selection Sort     |$O(n^2)$| $O(n^2)$|  unstable |$O(1)$ |
 | Insertion Sort     |$O(n^2)$| $O(n^2)$|  stable   |$O(1)$ |
