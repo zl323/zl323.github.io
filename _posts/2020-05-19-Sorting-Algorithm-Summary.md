@@ -11,6 +11,7 @@ Here is a Table of Characteristics of Sorting Algorithm in comparison.
 <style>
 table, th, td {
   border: 1px solid black;
+  border-collapse: collapse;
 }
 </style>
 | Sorting Algorithms | Worst  | Average | Stability | Space |
