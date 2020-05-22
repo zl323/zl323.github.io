@@ -26,3 +26,8 @@ Some other definitions and terms:
 - The ***depth*** of a node A in a tree is the length of path from the **ROOT** of the tree to **A**.
 - The ***height*** of a tree is the depth of the deepest node(leaf node).
 - The ***size*** of a binary tree is the number of nodes in it(including root).
+
+Full Binary Tree vs. Complete Binary Tree vs. Balanced Binary Tree
+- Full Binary Tree: A binary tree is ***FULL*** if every node is either a leaf node or else it is an internal node with two non-empty children. e.g. Huffman Coding Tree.
+- Complete Binary Tree: A binary tree is ***COMPLETE*** in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible. e.g. max/min heap. You can find  [heap](/_posts/2020-05-16-Heap-Sort.md) article here. Noted that ***A complete tree must be a balanced tree***.
+- Balanced Binary Tree: A binary tree is considered ***BALANCED*** in which the depth of the left and right subtrees of every node differ by 1 or less.
