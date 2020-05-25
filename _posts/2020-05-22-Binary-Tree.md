@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Binary Tree & Binary Search Tree"
+title:  "Binary Tree"
 date:   2020-05-22
-tags: BinaryTree BST Tree
+tags: BinaryTree Tree
 mathjax: true
 ---
 
