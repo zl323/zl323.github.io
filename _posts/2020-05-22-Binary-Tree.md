@@ -70,6 +70,8 @@ postOrder(root):
 
 Expression Tree
 
+A Expression Tree is used to represent a mathematical expression. ***Internal nodes*** of the expression tree are operators in the expression, with subtrees being the sub-expressions that are its operand. All ***leaf nodes*** are operands.
+ 
 Here is an example of Expression Tree:
 
 <figure>
