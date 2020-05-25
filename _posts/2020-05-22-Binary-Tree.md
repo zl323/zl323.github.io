@@ -73,7 +73,7 @@ Expression Tree
 Here is an example of Expression Tree:
 
 <figure>
-    <img src="https://zl323.github.io/assets/postImg/expressionTree.jpg" alt="useful image" height="80%" width="80%">
+    <img src="https://zl323.github.io/assets/postImg/expressionTree.jpg" alt="useful image" height="60%" width="60%">
     <figcaption>Expression Tree</figcaption>
 </figure>
 
@@ -97,6 +97,6 @@ CONSTRUCT_EXPRESSION_TREE(postfix):
       Create a node and push it onto a stack
     else: // if it is an operator
       Pop two nodes T1, T2 from the stack and form a tree with the operator as root, T1 and T2 as left and right child.
-      
       Push the tree onto the stack
+  return stack.pop()
 {% endhighlight %}
