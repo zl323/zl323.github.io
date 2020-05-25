@@ -60,10 +60,28 @@ inOrder(root):
   print(root.val);
   inOrder(root.right);
 
-preOrder(root):
+postOrder(root):
   if root is empty: return;
   
   postOrder(root.left);
   postOrder(root.right);
   print(root.val);
 {% endhighlight %}
+
+Expression Tree
+
+Here is an example of Expression Tree:
+
+<figure>
+    <img src="https://zl323.github.io/assets/postImg/expressionTree.jpg" alt="useful image" height="100%" width="100%">
+    <figcaption>Expression Tree</figcaption>
+</figure>
+
+> By applying inOrder, preOrder, postOrder, we can have
+> 
+> Infix Expression: (a+(b$\times$c))+(d$\times$(e+f))
+> 
+> Postfix Expression: abc*+def+*+
+>
+> Prefix Expression: ++a$\times$bc$\times$d+ef
+
