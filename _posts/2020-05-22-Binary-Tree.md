@@ -102,3 +102,10 @@ CONSTRUCT_EXPRESSION_TREE(postfix)
       Push the tree onto the stack
   return stack.pop()
 {% endhighlight %}
+
+A small summary on how to solve binary tree problems.
+
+<figure>
+    <img src="https://zl323.github.io/assets/postImg/二叉树的解法.jpg" alt="useful image" height="80%" width="80%">
+    <figcaption>Expression Tree</figcaption>
+</figure>
