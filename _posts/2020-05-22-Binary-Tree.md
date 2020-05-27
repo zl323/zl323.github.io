@@ -107,5 +107,5 @@ A small summary on how to solve binary tree problems.
 
 <figure>
     <img src="https://zl323.github.io/assets/postImg/二叉树的解法.jpg" alt="useful image" height="80%" width="80%">
-    <figcaption>Expression Tree</figcaption>
+    <figcaption>转自[二叉树的面试算法]（八）之二叉树算法解题思路总结(26题)</figcaption>
 </figure>
